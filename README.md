@@ -20,4 +20,8 @@ The script file [run_analysis.R](https://github.com/sandrojm/coursera-ds-gacd-co
 - data.table (https://cran.r-project.org/web/packages/data.table/index.html)
 - reshape2 (https://cran.r-project.org/web/packages/reshape2/index.html)
 
-The installation steps are integrated in the script
+The installation steps are integrated in [run_analysis.R](https://github.com/sandrojm/coursera-ds-gacd-course_project/blob/master/run_analysis.R)
+
+## The script
+
+
