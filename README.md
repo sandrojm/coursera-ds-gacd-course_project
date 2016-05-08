@@ -26,7 +26,7 @@ The installation steps are integrated in [run_analysis.R](https://github.com/san
 
 Download and run [run_analysis.R](https://github.com/sandrojm/coursera-ds-gacd-course_project/blob/master/run_analysis.R) from this repository. The script will automatically: 
 
-- Download the required data as a zip file into the current working directory
+- Download the required data as a zip file to the current working directory
 - Unzip the downloaded file within the specified working directory
 - Intall the required packages descriped above
 - Transform the data as described above
