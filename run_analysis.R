@@ -22,7 +22,9 @@ file <- "Dataset.zip"
 if (!file.exists(path)) {dir.create(path)}
 download.file(url, file.path(path, file))
 
+
 # EXTRACT THE ZIP FILE IN WORKING DIRECTORY
+
 
 # READING THE DATA FILES
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]
