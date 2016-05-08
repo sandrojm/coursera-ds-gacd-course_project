@@ -1,7 +1,6 @@
 # Getting and Cleaning Data Course Project
-Coursera - Assignment: Getting and Cleaning Data Course Project
 
-The R script called run_analysis.R that can be found within this repository does the following:
+## Assignment objective
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
