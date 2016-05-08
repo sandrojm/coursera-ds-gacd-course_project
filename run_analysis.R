@@ -36,9 +36,6 @@ xTrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
 yTrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
 subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 
-# create logical vector for the measurements containing the mean and standard deviation
-featuresMeanStd <- grepl("mean|std", features)
-
 
 # SET NAMES FOR TEST AND TRAINING DATA
 names(xTest) <- features
@@ -46,30 +43,23 @@ names(xTrain) <- features
 
 
 # EXTRACT MEASUREMENTS FOR MEAN AND STDEV
-## Test
+# create logical vector for the measurements containing the mean and standard deviation
+featuresMeanStd <- grepl("mean|std", features)
 xTest <- xTest[,featuresMeanStd]
-
-## Train
 xTrain <- xTrain[,featuresMeanStd]
 
 
 # LOAD ACTIVITY LABELS
-## Test
 yTest[,2] <- activityLabels[yTest[,1]]
 names(yTest) <- c("activityNum", "activityName")
 names(subjectTest) <- "subject"
-
-## Train
 yTrain[,2] <- activityLabels[yTrain[,1]]
 names(yTrain) <- c("activityNum", "activityName")
 names(subjectTrain) <- "subject"
 
 
 # COMBINE COLUMS FOR TEST AND TRAIN DATA
-## Test
 testData <- cbind(subjectTest, yTest, xTest)
-
-## Train
 trainData <- cbind(subjectTrain, yTrain, xTrain)
 
 
