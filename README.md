@@ -30,6 +30,6 @@ Download and run [run_analysis.R](https://github.com/sandrojm/coursera-ds-gacd-c
 - Unzip the downloaded file within the specified working directory
 - Intall the required packages descriped above
 - Transform the data as described above
-- Save a new, independent tidy data set named tidy_data.txt within the current working directory
+- Save a new, independent tidy data set named **tidy_data.txt** within the current working directory
 
 
