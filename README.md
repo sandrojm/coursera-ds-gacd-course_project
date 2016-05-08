@@ -13,4 +13,11 @@
 - Original: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 - Coursera: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## 
+## Requirements
+
+The script file {{run_analysis.R}} requires the installation of the following packages: 
+
+- data.table (https://cran.r-project.org/web/packages/data.table/index.html)
+- reshape2 (https://cran.r-project.org/web/packages/reshape2/index.html)
+
+The installation steps are integrated in the script
