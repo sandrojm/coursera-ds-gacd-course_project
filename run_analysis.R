@@ -22,33 +22,24 @@ file <- "Dataset.zip"
 if (!file.exists(path)) {dir.create(path)}
 download.file(url, file.path(path, file))
 
+# EXTRACT THE ZIP FILE IN WORKING DIRECTORY
 
-# load activity labels and features
+# READING THE DATA FILES
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]
 features <- read.table("./UCI HAR Dataset/features.txt")[,2]
-
+xTest <- read.table("./UCI HAR Dataset/test/X_test.txt")
+yTest <- read.table("./UCI HAR Dataset/test/y_test.txt")
+subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
+xTrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
+yTrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
+subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 
 # create logical vector for the measurements containing the mean and standard deviation
 featuresMeanStd <- grepl("mean|std", features)
 
 
-# LOADING TEST AND TRAINING DATA
-## test
-xTest <- read.table("./UCI HAR Dataset/test/X_test.txt")
-yTest <- read.table("./UCI HAR Dataset/test/y_test.txt")
-subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
-
-## train 
-xTrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
-yTrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
-subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
-
-
 # SET NAMES FOR TEST AND TRAINING DATA
-## xTest
 names(xTest) <- features
-
-## xTrain
 names(xTrain) <- features
 
 
