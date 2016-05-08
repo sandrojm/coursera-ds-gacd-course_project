@@ -18,12 +18,13 @@ library("reshape2")
 # DOWNLOAD DATA
 path <- getwd()
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-file <- "Dataset.zip"
+zipfile <- "Dataset.zip"
 if (!file.exists(path)) {dir.create(path)}
-download.file(url, file.path(path, file))
+download.file(url, file.path(path, zipfile))
 
 
 # EXTRACT THE ZIP FILE IN WORKING DIRECTORY
+unzip(zipfile, files = NULL, list = FALSE, overwrite = TRUE)
 
 
 # READING THE DATA FILES
