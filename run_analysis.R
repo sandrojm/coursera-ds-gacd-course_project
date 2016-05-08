@@ -85,7 +85,8 @@ dataLabels <- setdiff(colnames(completeData), idLabels)
 ## stack activity variables
 meltData <- melt(completeData, id = idLabels, measure.vars = dataLabels)
 
-## Apply mean function to dataset using dcast function
+## creates independent tidy data set with the mean of each variable for each activity and each subject.
 tidyData <- dcast(meltData, subject + activityLabel ~ variable, mean)
 
+## save tidy data set as independent file in working directory
 write.table(tidyData, file = "./tidy_data.txt")
