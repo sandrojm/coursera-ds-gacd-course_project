@@ -55,12 +55,12 @@ xTrain <- xTrain[,featuresMeanStd]
 # LOAD ACTIVITY LABELS
 ## Test
 yTest[,2] <- activityLabels[yTest[,1]]
-names(yTest) <- c("activityNum", "activityLabel")
+names(yTest) <- c("activityNum", "activityName")
 names(subjectTest) <- "subject"
 
 ## Train
 yTrain[,2] <- activityLabels[yTrain[,1]]
-names(yTrain) <- c("activityNum", "activityLabel")
+names(yTrain) <- c("activityNum", "activityName")
 names(subjectTrain) <- "subject"
 
 
@@ -79,14 +79,14 @@ completeData <- rbind(testData, trainData)
 
 # CREATE TIDY DATA SET
 ## specify identifiers for melt function
-idLabels <- c("subject", "activityNum", "activityLabel")
+idLabels <- c("subject", "activityNum", "activityName")
 dataLabels <- setdiff(colnames(completeData), idLabels)
 
 ## stack activity variables
 meltData <- melt(completeData, id = idLabels, measure.vars = dataLabels)
 
 ## creates independent tidy data set with the mean of each variable for each activity and each subject.
-tidyData <- dcast(meltData, subject + activityLabel ~ variable, mean)
+tidyData <- dcast(meltData, subject + activityName ~ variable, mean)
 
 ## save tidy data set as independent file in working directory
 write.table(tidyData, file = "./tidy_data.txt", row.name=FALSE)
