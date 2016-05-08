@@ -14,6 +14,13 @@ install.packages("reshape2")
 library("data.table")
 library("reshape2")
 
+# DOWNLOAD DATA
+path <- getwd()
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+file <- "Dataset.zip"
+if (!file.exists(path)) {dir.create(path)}
+download.file(url, file.path(path, file))
+
 
 # load activity labels and features
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]
