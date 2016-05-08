@@ -55,12 +55,12 @@ xTrain <- xTrain[,featuresMeanStd]
 # LOAD ACTIVITY LABELS
 ## Test
 yTest[,2] <- activityLabels[yTest[,1]]
-names(yTest) <- c("activityID", "activityLabel")
+names(yTest) <- c("activityNum", "activityLabel")
 names(subjectTest) <- "subject"
 
 ## Train
 yTrain[,2] <- activityLabels[yTrain[,1]]
-names(yTrain) <- c("activityID", "activityLabel")
+names(yTrain) <- c("activityNum", "activityLabel")
 names(subjectTrain) <- "subject"
 
 
@@ -79,7 +79,7 @@ completeData <- rbind(testData, trainData)
 
 # CREATE TIDY DATA SET
 ## specify identifiers for melt function
-idLabels <- c("subject", "activityID", "activityLabel")
+idLabels <- c("subject", "activityNum", "activityLabel")
 dataLabels <- setdiff(colnames(completeData), idLabels)
 
 ## stack activity variables
