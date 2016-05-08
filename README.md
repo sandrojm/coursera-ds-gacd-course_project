@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Course Project
 
-## Assignment objective
+## Script objective
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -22,6 +22,14 @@ The script file [run_analysis.R](https://github.com/sandrojm/coursera-ds-gacd-co
 
 The installation steps are integrated in [run_analysis.R](https://github.com/sandrojm/coursera-ds-gacd-course_project/blob/master/run_analysis.R)
 
-## The script
+##  Script
+
+Download and run [run_analysis.R](https://github.com/sandrojm/coursera-ds-gacd-course_project/blob/master/run_analysis.R) from this repository. The script will automatically: 
+
+- Download the required data as a zip file into the current working directory
+- Unzip the downloaded file within the specified working directory
+- Intall the required packages descriped above
+- Transform the data as described above
+- Save a new, independent tidy data set named tidy_data.txt within the current working directory
 
 
