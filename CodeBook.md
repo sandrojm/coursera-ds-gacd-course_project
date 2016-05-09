@@ -15,6 +15,21 @@ Source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+
 
 ## 2 - Files
 
+File | Description
+------------ | -------------
+activity_labels.txt | connects class lables and activity names
+features_info.txt |  information on the variables used on the feature vector.
+features.txt | list of all features
+README.txt | read me file with detailed information regarding the dataset
+test/X_test.txt | raw data test
+test/y_test.txt | raw data test labels
+train/Inertial Signals/body_acc_x_train.txt |  the body acceleration signal obtained by subtracting the gravity from the total acceleration.
+train/Inertial Signals/body_gyro_x_train.txt |  the angular velocity vector measured by the gyroscope for Each window sample. the units are radians/second.
+train/Inertial Signals/total_acc_x_train.txt |  The acceleration signal from the smartphone accelerometer X axis in standard gravity units g. Every row shows a 128 element vector. The same description applies for the total_acc_x_train.txt and total_acc_z_train.txt files for the Y and Z axis.
+train/subject_train.txt |  Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+train/X_train.txt | raw data training
+train/y_train.txt | raw data training labels
+
 ## 3 - Variables
 
 ## 4 - Structure
