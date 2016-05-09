@@ -164,9 +164,3 @@ Variable | Description
  $ fBodyBodyGyroJerkMag-mean()     |  num  -0.942 -0.99 -0.995 -0.319 -0.282 ...
  $ fBodyBodyGyroJerkMag-std()      |  num  -0.933 -0.987 -0.995 -0.382 -0.392 ...
  $ fBodyBodyGyroJerkMag-meanFreq() |  num  0.176 0.185 0.334 0.191 0.19 ...
-
-### 5.3 - Summary
-
-### 5.4 - Head
-
-
