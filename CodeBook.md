@@ -80,6 +80,7 @@ featAverage | Feature: Average of each variable for each activity and each subje
 
 > str(tidyData)
 'data.frame':	180 obs. of  81 variables:
+
 Variable | Description
 ------------ | -------------
   $ subject                         |  int  1 1 1 1 1 1 2 2 2 2 ...
