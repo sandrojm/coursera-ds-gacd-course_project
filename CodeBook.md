@@ -63,6 +63,19 @@ featAverage | Feature: Average of each variable for each activity and each subje
 
 ### 5.1 - Process
 
+- load required packages
+- download raw data
+- extract data
+- read raw data into R
+- set names for test and train data
+- create logical vector in order to extract mean and std.dev measurements
+- assign activity labels
+- combine colums (cbind) for test and train data
+- create complete data set by combining rows (rbind) of test and tran data
+- create keys / identifiers for meld function
+- use melt function to stack the data and create tidy data set
+- use write.table to export tidy data as independent txt data set
+
 ### 5.2 - Structure
 
 ### 5.3 - Summary
