@@ -27,6 +27,7 @@ test/X_test.txt |  Test set.
 test/y_test.txt |  Test labels
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
+
 File | Description
 ------------ | -------------
 train/subject_train.txt |  Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
